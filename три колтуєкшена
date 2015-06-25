@@ -1,0 +1,84 @@
+<div id="vopros" class="modal fade" tabindex="-1">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+
+<button class="close" type="button" data-dismiss="modal">×</button>
+<h4 id="exampleModalLabel" class="modal-title">Задайте вопрос нашим стоматологам-хирургам. Мы свяжемся с Вами и дадим максимально полный ответ на Ваш вопрос</h4>
+</div>
+<div class="modal-body"><form action="vopros.php" method="post">
+<div class="form-group"><label class="control-label" for="recipient-name">Ваше имя:</label>
+<input id="recipient-name" class="form-control" name="lead_name" type="text" placeholder="Например: Анастасия" /></div>
+<div class="form-group"><label class="control-label" for="recipient-name">Ваш телефон:</label>
+<input id="recipient-name" class="form-control" name="lead_phone" required="required" type="text" placeholder="Пример: +38 057 732 52 72" /></div>
+<div class="form-group"><label class="control-label" for="message-text">Ваш вопрос:</label>
+<textarea id="message-text" class="form-control" name="lead-text" required="required" placeholder="Пример: Нужно ли показывать прописку для скидки?"></textarea></div>
+<button class="btn btn-primary" type="submit">Отправить вопрос</button>
+
+</form></div>
+<div class="modal-footer"><button class="btn btn-default" type="button" data-dismiss="modal">Закрыть</button></div>
+</div>
+</div>
+</div>
+<div id="zapisPriem" class="modal fade" tabindex="-1">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+
+<button class="close" type="button" data-dismiss="modal">×</button>
+<h4 id="exampleModalLabel" class="modal-title">Укажите пожалуйста Ваши данные ниже - согласно им наша регистратура запишеш Вас на приём или свяжется с Вами по телефону, чтобы уточнить время и дату приёма.</h4>
+</div>
+<div class="modal-body"><form action="priem-akcia.php" method="post">
+<div class="form-group"><label class="control-label" for="recipient-name">Ваше имя:</label>
+<input id="recipient-name" class="form-control" name="lead_name" type="text" placeholder="Например: Анастасия" /></div>
+<div class="form-group"><label class="control-label" for="recipient-name">Ваш телефон:</label>
+<input id="recipient-name" class="form-control" name="lead_phone" required="required" type="text" placeholder="Пример: +38 057 732 52 72" /></div>
+<div class="form-group"><label class="control-label" for="recipient-name">К какому врачу Вы хотите записаться?</label>
+<!-- <input type="selector" class="form-control" name='lead_phone' id="recipient-name" required='required' placeholder='Пример: Феденко Ярослав Павлович'>-->
+<select class="form-control" name="lead_vrach">
+<option value="Феденко Алла Викторовна">Феденко Алла Викторовна</option>
+<option value="Теняева Анна Васильевна">Теняева Анна Васильевна</option>
+<option value="Петик Алексей Владимирович">Петик Алексей Владимирович</option>
+<option value="к любому врачу">-Записаться к любому врачу-</option>
+</select></div>
+<div class="form-group"><label class="control-label" for="message-text">Напишите удобное вам время и дату посещения врача:</label>
+<textarea id="message-text" class="form-control" name="lead-text" required="required" placeholder="Пример: 8 июля в 12:30"></textarea></div>
+<button class="btn btn-primary" type="submit">Готово!</button>
+
+</form></div>
+<div class="modal-footer"><button class="btn btn-default" type="button" data-dismiss="modal">Закрыть</button></div>
+</div>
+</div>
+</div>
+<div id="perezvon" class="modal fade" tabindex="-1">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+
+<button class="close" type="button" data-dismiss="modal">×</button>
+<h4 id="exampleModalLabel" class="modal-title">Укажите Ваш номер телефона - наша регистратура перезвонит Вам в ближайшие несколько минут и ответит на все Ваши вопросы.</h4>
+</div>
+<div class="modal-body"><form action="perezvon.php" method="post"><!--
+<div class="form-group">
+            <label for="recipient-name" class="control-label">Ваше имя:</label>
+<input type="text" class="form-control" id="recipient-name" name='lead_name' placeholder='Например: Анастасия'></div>
+-->
+<div class="form-group"><label class="control-label" for="recipient-name">Ваш телефон:</label>
+<input id="recipient-name" class="form-control" name="lead_phone" required="required" type="text" placeholder="Пример: +38 057 732 52 72" /></div>
+<!--
+<div class="form-group">
+            <label for="recipient-name" class="control-label">К какому врачу Вы хотите записаться?</label>
+<input type="selector" class="form-control" name='lead_phone' id="recipient-name" required='required' placeholder='Пример: +38 057 732 52 72'></div>
+-->
+<!--
+<div class="form-group">
+            <label for="message-text" class="control-label">Напишите удобное вам время и дату посещения врача:</label>
+<textarea class="form-control" id="message-text" name='lead-text' required='required' placeholder='Пример: 8 июля в 12:30'></textarea></div>
+-->
+<button class="btn btn-primary" type="submit">Готово! Жду звонка...</button>
+
+</form></div>
+<div class="modal-footer"><button class="btn btn-default" type="button" data-dismiss="modal">Закрыть</button></div>
+</div>
+</div>
+</div>
